@@ -32,6 +32,7 @@
     color: white;
     overflow:hidden;
     margin-bottom: .2em;
+    cursor:pointer;
 }
 
 .headlinebutton.activebutton{
@@ -83,6 +84,20 @@ body {
     background-color:black;
     color:white;
     overflow-y: scroll;
+    
+}
+
+a{
+    color:springgreen;
+}
+a:visited{
+    color:springgreen;
+}
+a:hover{
+    color:white;
+}
+a:active{
+    color:green;
 }
 
 img{
