@@ -9,14 +9,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Brennan T. Bertram - Portfolio Showcase</title>
 
-    <link rel="stylesheet" href="css/mainPageStyleSheet.css" />
+    <link rel="stylesheet" media="only screen and (max-width: 600px)" href="css/indexPhoneStyle.css" />
+    <link rel="stylesheet" media="only screen and (min-width: 601px)" href="css/indexTabletStyle.css" />
+    <link rel="stylesheet" media="only screen and (min-width: 992px)" href="css/indexDesktopStyle.css" />
     <script src="js/mainpage.js"></script>
     
 </head>
 <body>
     <header class="homeheader">
         <h1>Brennan T. Bertram</h1>
-        <p>|Game Developer||Programmer||Software Engineer|</p>      
+        <h4>|Game Developer|</h4>
+        <h4>|Programmer|</h4>
+        <h4>|Software Engineer|</h4>      
     </header>
 
 
@@ -40,34 +44,43 @@
 
         <div id="projectcontent" class="headlinecontent">
 
-            <h3>Project Keystone</h3>
-            <p>A small puzzle-action game made in Unity, where the player shifts rows and columns of different tiles to arrange them in specific patterns to clear them away.
-            This project is made on my own time, for fun! The technology is simple, implementing a basic search system to find matching patterns in the play area. 
-            A short clip of the first playable build can be see <a target="_blank" href="https://twitter.com/Brennan_Bertram/status/1382816902179790849?s=20">here</a>.</p>
+            <details>
+                <summary>Project Keystone</summary>
+                <p>A small puzzle-action game made in Unity, where the player shifts rows and columns of different tiles to arrange them in specific patterns to clear them away.
+                This project is made on my own time, for fun! The technology is simple, implementing a basic search system to find matching patterns in the play area. 
+                A short clip of the first playable prototype can be see <a target="_blank" href="https://twitter.com/Brennan_Bertram/status/1382816902179790849?s=20">here</a>.</p>
+            </details>
+
+            <details>
+                <summary>Yoink! Museum Heist</summary>
+                <p>A small party-game made in Unreal Engine 4 as a university project.
+                As part of team of nineteen people, we worked together to create this game in the timeframe of about four months.
+                As one of the three engineers, I was tasked with creating backend game systems, helping manage source control,
+                and sometimes debugging/optimizing blueprints created by the designers.
+                I also occasionally provided design input which made it into the final game. 
+                A video showcase of the game can be seen <a target="_blank" href="https://www.youtube.com/watch?v=52NqAlOfWWQ">here</a>.</p>
+            </details>
             
-            <h3>Yoink! Museum Heist</h3>
-            <p>A small party-game made in Unreal Engine 4 as a university project.
-            As part of team of nineteen people, we worked together to create this game in the timeframe of about four months.
-            As one of the three engineers, I was tasked with creating backend game systems, helping manage source control,
-            and sometimes debugging/optimizing blueprints created by the designers.
-            I also occasionally provided design input which made it into the final game. 
-            A video showcase of the game can be seen <a target="_blank" href="https://www.youtube.com/watch?v=52NqAlOfWWQ">here</a>.</p>
 
-            <h3>EggsCompany</h3>
-            <p>A turn-based tactical game prototype heavily inspired by XCOM: Enemy Unknown, made in Unity, as a university project.
-            As part of a team of three people, we were tasked with creating a game that showed off several AI programming techniques.
-            My role was to implement pathfinding, and the game implements an A* pathfinding algorithm.
-            Part of this also required implementation of a search system, which was also robust enough to be able to implement other searches,
-            able to provide elements of environmental information to the player and AI necessary for decision making. 
-            A short clip of this system in action can be seen <a target="_blank" href="https://twitter.com/Brennan_Bertram/status/1380340920508325889?s=20">here</a>.</p>
+            <details>
+                <summary>EggsCompany</summary>
+                <p>A turn-based tactical game prototype, made in Unity, as a university project.
+                As part of a team of three people, we were tasked with creating a game that showed off several AI programming techniques.
+                My role was to implement pathfinding, and the game implements an A* pathfinding algorithm.
+                Part of this also required implementation of a search system, which was also robust enough to be able to implement other searches,
+                able to provide elements of environmental information to the player and AI necessary for decision making. 
+                A short clip of this system in action can be seen <a target="_blank" href="https://twitter.com/Brennan_Bertram/status/1380340920508325889?s=20">here</a>.</p>
+            </details>
 
-            <h3>Gatherin’ Game</h3>
-            <p>A technical demo made in Unity with SQLite, which served as my final university project.
-            This project was aimed at researching and implementing an external database as a backend system in a game.
-            The game includes several gameplay features through this system, including world and player persistence, achievements,
-            leaderboards, and additional features required to facilitate these,
-            such as a user account system and concurrent programming techniques to avoid application locks while queries were run. 
-            The entire project can be seen on a github repository <a target="_blank" href="https://github.com/btbertram/TeesU-GPP">here</a>.</p>
+            <details>
+                <summary>Gatherin’ Game</summary>
+                <p>A technical demo made in Unity with SQLite, which served as my final university project.
+                This project was aimed at researching and implementing an external database as a backend system in a game.
+                The game includes several gameplay features through this system, including world and player persistence, achievements,
+                leaderboards, and additional features required to facilitate these,
+                such as a user account system and concurrent programming techniques to avoid application locks while queries were run. 
+                The entire project can be seen on a github repository <a target="_blank" href="https://github.com/btbertram/TeesU-GPP">here</a>.</p>
+            </details>
 
         </div>
 
@@ -81,7 +94,7 @@
     </div>
 
     <footer>
-        <p>Website &#169 2021 Brennan Bertram. All Rights Reserved. <br /> We do not collect or host personal information. <a href="../html/tos.html">Terms of Service</a>.</p>
+        <p>Website &#169 2021 Brennan Bertram. All Rights Reserved. <br /> We do not collect or host personal information. <a target="_blank" href="./html/tos.html">Terms of Service</a>.</p>
     </footer>
 
 

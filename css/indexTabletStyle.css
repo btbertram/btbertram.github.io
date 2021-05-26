@@ -1,0 +1,118 @@
+﻿
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: auto;
+    margin-bottom: 7em;
+    width: 90%;
+    background-color: black;
+    color: white;
+    overflow-y: scroll;
+}
+
+a {
+    color: springgreen;
+}
+
+    a:visited {
+        color: springgreen;
+    }
+
+    a:hover {
+        color: white;
+    }
+
+    a:active {
+        color: green;
+    }
+
+summary {
+    font-size: 3vw;
+    margin: 1vw;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+footer {
+    font-family: Courier New, Courier, monospace;
+    text-align: center;
+    width: 100%;
+    margin-top: .25em;
+    overflow: hidden;
+    background-color: black;
+    border-top-style: solid;
+    border-top-width: .2em;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+
+.homeheader {
+    font-size: 3vw;
+    text-align: center;
+}
+
+    .homeheader h1 {
+        margin-top: 1.5em;
+    }
+
+.centerelement {
+    margin: auto;
+    width: 90%;
+    text-align: center;
+}
+
+.headlinebutton {
+    width: 30%;
+    height: 3em;
+    font-size: 2vw;
+    border-color: lightgreen;
+    border-width: .5vw .25vw .5vw .25vw;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+    overflow: hidden;
+    margin-bottom: .2em;
+    cursor: pointer;
+}
+
+    .headlinebutton.activebutton {
+        height: 3em;
+        font-weight: 600;
+        border-color: white;
+        border-bottom-style: none;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+        padding-bottom: 0;
+        margin-bottom: 0;
+        vertical-align: bottom;
+    }
+
+.headlinecontent {
+    padding-inline: 1em;
+    overflow: hidden;
+}
+
+.headlinecontainer {
+    margin: auto;
+    width: 90%;
+    height: auto;
+    border: solid;
+    border-color: white;
+    border-width: .25em;
+    border-radius: 20px;
+}
+
+.hide {
+    width: 0;
+    height: 0;
+}
+
+    .hide > * {
+        width: 0;
+        height: 0;
+    }
