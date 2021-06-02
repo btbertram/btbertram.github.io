@@ -3,6 +3,12 @@
 
 function Startup() {
 
+    let jsenabledelement = document.getElementsByClassName("jsremove");
+
+    for (let element of jsenabledelement) {
+        element.classList.remove("jsremove");
+    }
+
     document.getElementById("aboutbutton").addEventListener("click", function () { SetActiveButton("aboutbutton"), ShowTabbedContent("aboutcontent"); });
     document.getElementById("contactbutton").addEventListener("click", function () { SetActiveButton("contactbutton"), ShowTabbedContent("contactcontent"); });
     document.getElementById("projectbutton").addEventListener("click", function () { SetActiveButton("projectbutton"), ShowTabbedContent("projectcontent"); });

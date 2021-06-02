@@ -13,7 +13,8 @@
     <link rel="stylesheet" media="only screen and (min-width: 601px)" href="css/indexTabletStyle.css" />
     <link rel="stylesheet" media="only screen and (min-width: 992px)" href="css/indexDesktopStyle.css" />
     <script src="js/mainpage.js"></script>
-    
+    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
 </head>
 <body>
     <header class="homeheader">
@@ -24,7 +25,7 @@
     </header>
 
 
-    <div class="centerelement">
+    <div class="jsremove centerelement">
         <button id="projectbutton" class="headlinebutton">Projects</button>
 
         <button id="contactbutton" class="headlinebutton">Contact</button>
@@ -33,6 +34,16 @@
     </div>
 
     <div class="headlinecontainer">
+
+        <div id="aboutcontent" class="headlinecontent">
+            <p>
+                I’m a Software Developer with a BSc in Computer Games Programming from Teesside University Middlesbrough,
+                with some experience in Software Engineering. I have experience working with C#, C++, Unity Game Engine, Unreal Engine 4,
+                and other tools and languages used to create games or other applications. When I’m not working on my personal projects,
+                I enjoy playing video games, travel, and using birdwatching to relax.
+            </p>
+        </div>
+
         <div id="contactcontent" class="headlinecontent">
             <p>For any business inqueries or general questions, I can be contacted at:</p>
             <ul>
@@ -49,17 +60,23 @@
                 <p>
                     A small puzzle-action game made in Unity, where the player shifts rows and columns of different tiles to arrange them in specific patterns to clear them away.
                     This project is made on my own time, for fun! The technology is simple, implementing a basic search system to find matching patterns in the play area.
-                </p>                   
+                </p>
 
-                <blockquote class="twitter-tweet" data-dnt="true" data-theme="dark">
+                <blockquote class="twitter-tweet jsremove" data-dnt="true" data-theme="dark">
                     <p lang="en" dir="ltr">
                         One of the personal projects I&#39;ve been working on is a game prototype.
-                        This here is a first playable build of a small action puzzle game! 
+                        This here is a first playable build of a small action puzzle game!
                         <a href="https://t.co/sUOPXUjOxo">pic.twitter.com/sUOPXUjOxo</a>
                     </p>
-                    &mdash; Brennan Bertram (@Brennan_Bertram) <a href="https://twitter.com/Brennan_Bertram/status/1382816902179790849?ref_src=twsrc%5Etfw">April 15, 2021</a>                
+                    &mdash; Brennan Bertram (@Brennan_Bertram) <a href="https://twitter.com/Brennan_Bertram/status/1382816902179790849?ref_src=twsrc%5Etfw">April 15, 2021</a>
                 </blockquote>
-                <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+                <noscript>
+                    <p>
+                        A small clip of this prototype can be seen on my Twitter <a href="https://twitter.com/Brennan_Bertram/status/1382816902179790849?ref_src=twsrc%5Etfw" target="_blank">with this link</a>.
+                    </p>
+                </noscript>
+
             </details>
 
             <details>
@@ -72,9 +89,16 @@
                     I also occasionally provided design input which made it into the final game.
                 </p>
 
-                <iframe src="https://www.youtube.com/embed/52NqAlOfWWQ" title="YouTube video player" frameborder="0"
+                <iframe class="jsremove" src="https://www.youtube.com/embed/52NqAlOfWWQ" title="YouTube video player" frameborder="0"
                         allow="clipboard-write; encrypted-media; picture-in-picture" allowfullscreen></iframe>
-            </details>            
+
+                <noscript>
+                    <p>
+                        A gameplay showcase video can be seen on YouTube <a href="https://www.youtube.com/embed/52NqAlOfWWQ" target="_blank">with this link</a>.
+                    </p>
+                </noscript>
+
+            </details>
 
             <details>
                 <summary>EggsCompany</summary>
@@ -86,15 +110,21 @@
                     able to provide elements of environmental information to the player and AI necessary for decision making.
                 </p>
 
-                <blockquote class="twitter-tweet" data-dnt="true" data-theme="dark">
+                <blockquote class="jsremove twitter-tweet" data-dnt="true" data-theme="dark">
                     <p lang="en" dir="ltr">
-                        One of my group projects during final year was about AI in games. My task was pathfinding, and I implemented an A* search algorithm using a node-based system to make it happen. 
-                        That search system ended up getting a lot of use in other gameplay systems too, like decision making. 
+                        One of my group projects during final year was about AI in games. My task was pathfinding, and I implemented an A* search algorithm using a node-based system to make it happen.
+                        That search system ended up getting a lot of use in other gameplay systems too, like decision making.
                         <a href="https://t.co/GyuKzwSOqg">pic.twitter.com/GyuKzwSOqg</a>
                     </p>
                     &mdash; Brennan Bertram (@Brennan_Bertram) <a href="https://twitter.com/Brennan_Bertram/status/1380340920508325889?ref_src=twsrc%5Etfw">April 9, 2021</a>
                 </blockquote>
-                <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+                <noscript>
+                    <p>
+                        A small clip of the project demo can be seen on my Twitter <a href="https://twitter.com/Brennan_Bertram/status/1380340920508325889?ref_src=twsrc%5Etfw" target="_blank">with this link</a>.
+                    </p>
+                </noscript>
+
             </details>
 
             <details>
@@ -108,18 +138,17 @@
                     The entire project can be seen on a github repository <a target="_blank" href="https://github.com/btbertram/TeesU-GPP">here</a>.
                 </p>
 
-                <iframe src="https://www.youtube.com/embed/tmxtAPeecyA" title="YouTube video player" frameborder="0" 
+                <iframe class="jsremove" src="https://www.youtube.com/embed/tmxtAPeecyA" title="YouTube video player" frameborder="0"
                         allow="clipboard-write; encrypted-media; picture-in-picture" allowfullscreen></iframe>
+
+                <noscript>
+                    <p>
+                        A video showcase of the project can be seen on YouTube <a href="https://www.youtube.com/embed/tmxtAPeecyA" target="_blank">with this link</a>.
+                    </p>
+                </noscript>
 
             </details>
 
-        </div>
-
-        <div id="aboutcontent" class="headlinecontent">
-            <p>I’m a Software Developer with a BSc in Computer Games Programming from Teesside University Middlesbrough,
-            with some experience in Software Engineering. I have experience working with C#, C++, Unity Game Engine, Unreal Engine 4,
-            and other tools and languages used to create games or other applications. When I’m not working on my personal projects, 
-            I enjoy playing video games, travel, and using birdwatching to relax. </p>
         </div>
 
     </div>
