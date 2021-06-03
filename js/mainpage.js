@@ -5,8 +5,9 @@ function Startup() {
 
     let jsenabledelement = document.getElementsByClassName("jsremove");
 
-    for (let element of jsenabledelement) {
-        element.classList.remove("jsremove");
+    //While loop used because a for let of loop would skip over some elements in the collection for an unidentified reason
+    while (jsenabledelement.length > 0) {
+        jsenabledelement.item(0).classList.remove("jsremove");
     }
 
     document.getElementById("aboutbutton").addEventListener("click", function () { SetActiveButton("aboutbutton"), ShowTabbedContent("aboutcontent"); });
