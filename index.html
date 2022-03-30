@@ -39,8 +39,8 @@
             <p>
                 <img src="img/ProfileHeadshot.jpg" alt="Profile Picture of Brennan" style="width:200px;padding:0em 1em 1em 0em" />
                 I’m a Game Developer with a BSc in Computer Games Programming from Teesside University Middlesbrough, and I have
-                experience in Software Engineering from an internship at DuPont-Teijin Films. I use my experience working with C#, C++, Unity Game Engine, Unreal Engine 4,
-                and other tools and languages used to create games and other applications. When I’m not working on my personal projects,
+                experience in Software Engineering from an internship at DuPont-Teijin Films. I use my experience with C++, C#, Unreal Engine 4, Unity Game Engine,
+                and other tools and languages used to create games and other applications. When I’m not working on my projects,
                 I enjoy playing video games, travel, and using birdwatching to relax.
             </p>
         </div>
@@ -60,10 +60,13 @@
                 <summary>Yoink! Museum Heist</summary>
                 <p>
                     A small party-game made in Unreal Engine 4 as a university project.
-                    As part of team of nineteen people, we worked together to create this game in the timeframe of about four months.
-                    As one of the three engineers, I was tasked with creating backend game systems, helping manage source control,
-                    and sometimes debugging/optimizing blueprints created by the designers.
-                    I also occasionally provided design input which made it into the final game.
+                    As part of team of nineteen people, composed of Designers, Artists, and Engineers, we worked together to create this game in the timeframe of about four months.
+                    <br /><br />
+                    Of the nineteen, we had only three engineers (of which I was one), so we decided to have the team work in Blueprints so that more team members could contribute to gameplay features.
+                    I was tasked with creating backend game systems, such as the Game State system which helped control the appearance of the Lobby level, and the system which set the materials
+                    to differentiate the players. I helped manage a git based source control, helped solve merge conflicts and taught other team members how to use utilities like github.
+                    Another responsibility was to optimize and debug blueprints created by other team members, which helped bring various features across the finish line and keep the game stable.
+                    I also provided design input (such as suggesting not to cut instruction screens for the minigames) that made it into the final game.
                 </p>
 
                 <iframe class="jsremove" src="https://www.youtube.com/embed/52NqAlOfWWQ" title="YouTube video player" frameborder="0"
@@ -80,12 +83,18 @@
             <details>
                 <summary>Gatherin’ Game</summary>
                 <p>
-                    A technical demo made in Unity with SQLite, which served as my final university project.
+                    A technical demo made in Unity with C# and SQLite, which served as my final university project.
                     This project was aimed at researching and implementing an external database as a backend system in a game.
-                    The game includes several gameplay features through this system, including world and player persistence, achievements,
-                    leaderboards, and additional features required to facilitate these,
-                    such as a user account system and concurrent programming techniques to avoid application locks while queries were run.
-                    The entire project can be seen on a github repository <a target="_blank" href="https://github.com/btbertram/TeesU-GPP">at this link</a>.
+                    <br /><br />
+                    I included several gameplay features through this database system, including world and player persistence, achievements, and leaderboards.
+                    I used concurrent programming techniques like C#'s Async system to avoid application locks while queries were run, and to track stats per player,
+                    a simple User Account system with parameterized variables, and salt/hash logins are also implemented.
+                    <br /> <br />
+                    UI elements are also implemented to display data and game menus. I implemented UI control through custom functions and event handlers which react to Unity UI events.
+                    Other basic gameplay elements are primarily implemented using Unity's editor features (sincey they weren't the focus of the project), such as the player following 3rd person camera, and collision, but
+                    C# Interfaces are used for "interactable" game objects, allowing abstracted, reusable code.
+                    <br /><br />
+                    The entire project can be seen on a github repository as the TeesU-GPP <a target="_blank" href="https://github.com/btbertram/TeesU-GPP">at this link</a>.
                 </p>
 
                 <iframe class="jsremove" src="https://www.youtube.com/embed/tmxtAPeecyA" title="YouTube video player" frameborder="0"
@@ -102,10 +111,14 @@
             <details>
                 <summary>MazeGen</summary>
                 <p>
-                    A game system made in Ureal Engine 4. Using c++ and the UE4 API, this system randomly generates a simple maze and spawns it in an a UE4 level.
-                    A key part of this system allows blueprint classes derived from key c++ classes to included in the generation algorithm,
-                    letting enginners and designers work in tandem, while still keeping maintainable code.
-                    This entire project can be seen on my github repository <a href="https://github.com/btbertram/UE4MazegenProject">at this link</a>.
+                    A game system made in Ureal Engine 4, using C++ and the UE4 API. I specifically started this personal project to learn about C++ programming in Unreal, and to
+                    better understand the engine's best practices and workflows.
+                    <br /><br />
+                    I used a depth-first search based algorithm to randomly generate data for a maze, then used this data to spawn actors into a UE4 level.
+                    Using UE4's gameplay tags, and inheritance, I made it so that blueprint classes derived from key C++ classes can be included in the generation algorithm if they are placed in the level,
+                    in editor. This allows other team members to create custom "maze tiles" with different gameplay features or appearances that can be included in the system without touching the backend C++ code!
+                    <br /><br />
+                    This entire project can be seen on my github repository as the UE4MazeGenProject <a href="https://github.com/btbertram/UE4MazegenProject">at this link</a>.
                 </p>
 
                 <iframe class="jsremove" width="1903" height="758" src="https://www.youtube.com/embed/263IiCyRb_w" title="YouTube video player" frameborder="0"
@@ -148,7 +161,7 @@
                 <p>
                     A turn-based tactical game prototype, made in Unity, as a university project.
                     As part of a team of three people, we were tasked with creating a game that showed off several AI programming techniques.
-                    My role was to implement pathfinding, and the game implements an A* pathfinding algorithm.
+                    My role was to implement pathfinding, and I implemented a node-based A* pathfinding algorithm.
                     Part of this also required implementation of a search system, which was also robust enough to be able to implement other searches,
                     able to provide elements of environmental information to the player and AI necessary for decision making.
                 </p>
@@ -168,6 +181,15 @@
                     </p>
                 </noscript>
 
+            </details>
+
+            <details>
+                <summary>Portfolio Website</summary>
+                <p>
+                    ...yes, this very website! As a personal side project, I learned and used basic HTML5, CSS, and JavaScript to create this showcase.
+                    <br /><br />
+                    Since I'm using github pages to host the site, you can see the repository for this website <a href="https://github.com/btbertram/btbertram.github.io">at this link</a>.
+                </p>
             </details>
 
         </div>
