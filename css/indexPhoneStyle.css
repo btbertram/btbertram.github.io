@@ -4,7 +4,7 @@ body {
     margin: auto;
     margin-bottom: 7em;
     width: 90%;
-    background-color: black;
+    background-color: rgb(48, 48, 48);
     color: white;
     overflow-y: scroll;
 }
